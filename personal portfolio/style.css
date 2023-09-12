@@ -1,0 +1,249 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,500&family=STIX+Two+Text&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,500&family=STIX+Two+Text&family=Source+Code+Pro:wght@300&display=swap');
+
+*{
+    margin: 7px;
+    padding: 0;
+}
+
+.sidebar{
+    position: absolute;
+    background-color: rgb(179, 179, 179);
+    font-family: 'STIX Two Text', serif;
+    height: 100vh;
+    transition: transform 0.3s ease-in;
+}
+
+.sidebar nav{
+    padding: 40px;
+}
+
+.sidebar nav li{
+    list-style: none;
+    font-size: 20px;
+    padding: 33px 0;
+}
+
+.sidebar nav li a{
+    text-decoration: none;
+    color: black;
+}
+
+.main{
+    /* background-color: yellow; */
+    width: 90vw;
+}
+
+.container{
+    display: flex;
+}
+
+.infoContainer{
+    /* background-color: rgb(202, 8, 192); */
+    height: 58vh;
+    width: 80vw;
+    margin: 144px auto;
+    display: flex;
+    justify-content: space-around;
+}
+.devinfo{
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.hello{
+
+    font-size: 3em;
+}
+.name{
+    font-size: 3em;
+    font-weight: bold;
+    font-family: 'STIX Two Text', serif;
+
+}
+.about{
+    font-size: 3em;
+}
+
+.moreabout{
+    font-size: 2em;
+    margin-top: 15px;
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 600;
+}
+
+.button{
+    margin-top: 2.2em;
+    font-size: 16px;
+}
+
+.btn{
+    padding: 9px 14px;
+    border-radius: 22px;
+    color: white;
+    background-color: dodgerblue;
+    font-weight: bold;
+    font-size: 1em;
+    margin: 3px 3px;
+    cursor: pointer;
+}
+
+/*.btn-sm{
+    font-size: 10px;
+    padding: 7px 13px;
+    margin: 10px 0;
+}*/
+
+.btn:hover{
+    color:dodgerblue;
+    background-color: white;
+}
+
+.devpic img{
+    height: 58vh;
+}
+
+.contactform{
+    padding: 0 34px;
+    padding-top: 37px;
+    font-family: 'STIX Two Text', serif;
+}
+
+.contactform h1{
+    /* text-align: center; */
+    font-family: 'Source Code Pro', monospace;
+    padding: 12px 0;
+}
+
+.contactform form div{
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.contactform form div input{
+    width: 26vw;
+    border-radius: 5px;
+    margin: 6px 0 0 0;
+    padding: 3px;
+}
+
+#emailHelp{
+    font-size: 12px;
+    color: midnightblue;
+    margin: 0 5px;
+}
+
+#form-check{
+    flex-direction: row;
+}
+
+#form-check input{
+    width: 24px;
+    margin: 3px 0;
+}
+
+.blogitem{
+    margin: 20px;
+    font-family: 'STIX Two Text', serif;
+}
+
+h1{
+    font-family: 'STIX Two Text', serif;
+    margin: 41px;
+
+}
+
+p{
+    font-family: 'Source Code Pro', monospace;
+}
+
+.intro h2{
+    font-family: 'STIX Two Text', serif;
+    margin: 12px;
+}
+
+.intro p{
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 400;
+    margin: 12px;
+}
+
+.skillcontainer{
+    padding: 12px;
+}
+
+.skillitem{
+    display: flex;
+    align-items: center;
+    font-family: 'Source Code Pro', monospace; 
+    font-weight: 900;
+}
+
+.skill{
+    width: 400px;
+    height: 6px;
+    background-color: rgb(216, 11, 11);
+    border: 2px solid black;
+}
+
+.hundred{
+    width: 400px;
+    background-color: lightgreen;
+}
+
+.seventyfive{
+    width: 300px;
+    background-color: yellow;
+}
+
+.fifty{
+    width: 200px;
+    background-color: blue;
+}
+
+.twentyfive{
+    width: 100px;
+}
+
+.sidebargo{
+    transform: translate(-443px, 0px);
+    position: absolute;
+}
+
+.menu{
+    position: absolute;
+    cursor: pointer;
+    top: 10px;
+    left: 10px;
+}
+
+.cross{
+    margin: 10px 133px;
+}
+
+@media (max-width: 657px){
+    *{
+
+    }
+    .button, .btn-sm{
+        font-size: 7px;
+    }
+    .devinfo{
+        font-size: 10px;
+    }
+    .devpic{
+        display: none;
+    }
+    /*.sidebar{
+        transform: translate(-443px, 0px);
+        position: absolute;
+    }*/
+    .intro, .blogcontainer, .contactform{
+        margin: 50px 8px;
+    }
+}
