@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>portfolioSahil</title>
+    <script src="https://kit.fontawesome.com/b30be782a9.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="/logo.png" alt="" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact me</a></li>
+                    <i class="fa-solid fa-burger" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="headertext">
+                <p>Web Developer</p>
+                <h1>Hi, I'm <span>Sahil</span><br>Samadder from India</h1>
+            </div>
+        </div>
+    </div>
+<!-- ----------------about---------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="aboutcol1">
+                    <img src="/img2.jpeg" class="photo2">
+                </div>
+                <div class="aboutcol2">
+                    <h1 class="subtitle">About me</h1>
+                    <p>New graduate acquiring technical and operational knowledge to one day contribute in the upliftment of the society through technical growth. I’m known for my leadership and management skills. I’m a smart and fast learner.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contains active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Developer</span><br>Designing Web interface</li>
+                            <li><span>App Developer</span><br>Building Android/ioS apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contains" id="experience">
+                        <ul>
+                            <li><span>Fresher</span></li>
+                            <li><span>2023</span><br>Web development internship at <span>CipherByte Technologies</span></li>
+                            <li><span>2023</span><br>Web development internship at <span>TechnoHacks EduTech</span></li>
+                            <li><span>2023</span><br>Full-stack Web development internship at <span>Bharat Intern</span></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contains" id="education">
+                        <ul>
+                            <li><span>2019-2023</span><br>B-Tech from B.P. Poddar Institute of Management and Technology <span>CGPA-8.65</span></li>
+                            <li><span>2018-2019</span><br>H.S from Sailendra Sircar Vidayalaya <span>75.6%</span></li>
+                            <li><span>2016-2017</span><br>Madhyamik from Sailendra Sircar Vidayalaya <span>74%</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- --------------services-------------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="subtitle">my Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web development</h2>
+                <p>Web development refers to the creating, building, and maintaining of websites. It includes aspects such as web design, web publishing, web programming, and database management. It is the creation of an application that works over the internet i.e. websites.</p>
+                <a href="https://www.techtarget.com/searchcloudcomputing/definition/web-application-development" target="_blank">learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store-ios"></i>
+                <h2>App development</h2>
+                <p>Mobile application development is the process of creating software applications that run on a mobile device, and a typical mobile application utilizes a network connection to work with remote computing resources.</p>
+                <a href="https://kissflow.com/application-development/what-is-application-development/" target="_blank">learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-video"></i>
+                <h2>Video Editing</h2>
+                <p>Video editing is the manipulation and arrangement of video shots. Video editing is used to structure and present all video information, including films and television shows, video advertisements and video essays. Video editing has been dramatically democratized in recent years by editing software available for personal computers.</p>
+                <a href="https://www.nobledesktop.com/learn/video-editing/what-is-video-editing" target="_blank">learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- --------------------------portfolio--------------------------- -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="subtitle">my Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="/weather2.jpeg" alt="">
+                <div class="layer">
+                    <h3>Weather App</h3>
+                    <p>This responsive application is used to display the current weather condition of a place based on the location given by the user in the application.</p>
+                    <a href="https://weather-app9037.netlify.app/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="/landing-page-img.jpeg" alt="">
+                <div class="layer">
+                    <h3>Landing Page of Gym</h3>
+                    <p>This responsive application is a Landing Page of a Gym(SahilFitness) where user can find the basic details about the Gym</p>
+                    <a href="https://sahilfitness.netlify.app/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="/to-do-list-img.jpeg" alt="">
+                <div class="layer">
+                    <h3>To-do-list</h3>
+                    <p>This responsive application is To-do List. To-do lists are a list of tasks that an individual needs to complete or accomplish. Tasks are typically put in order by priority or importance.</p>
+                    <a href="https://to-do-list-sahil.netlify.app/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <!-- <a href="#" class="btn">See more</a> -->
+    </div>
+    <div class="container">
+    <!-- <h1 class="subtitle">my Work</h1> -->
+    <div class="work-list">
+        <div class="work">
+            <img src="/Calculator.jpeg" alt="">
+            <div class="layer">
+                <h3>Calculator</h3>
+                <p>This responsive application Calculator is used for making mathematical calculations, in particular a small electronic device with a keyboard and a visual display.</p>
+                <a href="https://calculator-sahil.netlify.app/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+        </div>
+        <div class="work">
+            <img src="/videochatting.jpg" alt="">
+            <div class="layer">
+                <h3>Video conference App</h3>
+                <p>This responsive application is used to connect people from different locations to communicate with each other in sound, message and vision.</p>
+                <a href="https://sahilfitness.netlify.app/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+        </div>
+        <div class="work">
+            <img src="/project-management-software.png" alt="">
+            <div class="layer">
+                <h3>Project Management tool</h3>
+                <p>This responsive application is used to organize the project given by the user in the application.</p>
+                <a href="https://to-do-list-sahil.netlify.app/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+        </div>
+    </div>
+    <a href="#" class="btn">See more</a>
+</div>
+</div>
+
+<!-- -------------------contact---------------------- -->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="subtitle">Contact me</h1>
+                <p><i class="fa-solid fa-envelope"></i> sahilsamadder@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> +91-8585873214</p>
+                <div class="social-icon">
+                    <a href="https://www.linkedin.com/in/sahil-samadder-205789217/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/sahilsen8587" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.facebook.com/sahil.samadder?mibextid=ZbWKwL" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/sahilsamadder/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <a href="/Sahil's Resume (6).pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="copyright red">
+    <hr>
+    <p>Copyright &copy; SahilPortfolio.com | All rights reserved</p>
+</div>
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontains = document.getElementsByClassName("tab-contains");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontain of tabcontains){
+            tabcontain.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwb1IxBtrID_6tH0t1QKOeHrZCGQmtqIftOXOyLwJGhDLkRKP69fUL6Jcls-Uc3A1-x/exec'
+    const form = document.forms['submit-to-google-sheet']
+
+    const msg = document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully, Thank you for your response"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+</script>
+
+</body>
+</html>
